@@ -1,4 +1,6 @@
 # Credit Risk Engine: Production MLOps Pipeline
+## Live Interactive API Demo
+https://credit-risk-api-jewp.onrender.com/docs#/
 
 ## Project Overview
 This repository contains an end-to-end Machine Learning Operations (MLOps) pipeline designed to evaluate consumer credit risk using ensemble classification models. This project couples data engineering and model training with a container-ready REST API microservice, automated testing, and a continuous integration (CI) pipeline.
@@ -41,6 +43,3 @@ docker build -t credit-risk-api .
 # Run the containerised microservice on port 8000
 docker run -p 8000:8000 credit-risk-api
 ```
-
-### Interactive Testing
-Once the server is running natively or via Docker, access the auto-generated Swagger UI dashboard at http://localhost:8000/docs to send payload data and receive real-time credit risk predictions.
